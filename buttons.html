@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Button count</title>
+        <style>
+    h1{
+    border: none;
+    padding:20px;
+    font-size: 50px;
+    margin-bottom: 10%;
+    align-items: center;
+    justify-content: center;
+
+}
+h2{
+    align-items: center;
+    margin-left: 50%;
+    margin-top: 5px;
+}
+ button{
+    color:white;
+    background-color: rgb(207, 143, 236);
+    border:1px solid rgb(56, 55, 55);
+    padding: 10px;
+    margin-left: 35px;
+    margin-right: 30px;
+    border-radius: 10px;
+    align-items: center;
+    
+    justify-content: center;
+    display: flexbox;
+    width: 30%;
+
+    
+}
+
+.btn-container{
+    margin-left: 50%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px;
+    background-color: lightpink;
+    margin: auto;
+    max-width: 40%;
+    border-radius: 10px ;
+    border: 2px solid black;
+    align-items: center;
+    margin-top: 20%;
+    height: 30vh;
+}
+P{
+    margin-left: 35px;
+}
+body{
+     background-color: violet;
+}
+
+
+
+</style>
+    
+    </head>
+    <body>
+        <div class="btn-container">
+     
+        <h1 id = "p.e"> People entered</h1>
+        <h2 id ="count-el">0</h2>
+        <button id ="btn1" onclick="Increment()">  Increment</button> 
+        <button id ="btn2" onclick="display()"> Done counting!</button>     
+        <P id ="save-el"> Previous counts: </P>
+
+        </div>
+      
+        <script src="button.js"> // to be connected to javascript
+            document.getElementById("Increment")//from javascript
+            document.getElementById("Display")
+        </script>
+    </body>
+</html>
